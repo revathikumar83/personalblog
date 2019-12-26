@@ -1,0 +1,87 @@
+
+header{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-style: normal;
+    padding: 10px;
+    color: rebeccapurple;
+    grid-area: hd;
+    background-color: whitesmoke;
+
+}
+body{
+    display:grid;
+    grid-template-areas: "hd hd  hd hd hd hd hd" "sd main main main main main sp " "ft ft ft ft ft ft ft";
+    grid-template-rows: 60px 800px 70px;
+    grid-template-columns: 50px 300px 50px;
+    border: 2px gray;
+    grid-gap: 15px;
+    background-color: white;
+}
+#side{
+    
+    grid-area: sd;
+}
+#next{
+    
+    grid-area: sp;
+}
+#box{
+    
+    
+    grid-area: main;
+}
+section{
+border:1px red;
+
+
+}
+section img{
+    border-radius:50%;
+}
+.bio{
+float:right;
+font-size: 25px;
+color:rgba(0, 0, 0, 0.603);
+}
+
+form{
+    font-size: 25px;
+}
+.subscription{
+    float:center;
+    margin:90px;
+    text-align: center;
+}
+input[type=text] {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+  }
+  input[type=submit]{
+    border-radius: 20px;
+    padding: 10px 20px;
+    margin: 5px 0;
+    font-size:20px ;
+    color:white;
+    background-color: gray;
+  }
+
+.pre{
+    float:right;
+    margin-right:90px;
+    font-size: 25px;
+    color: rgb(42, 16, 212);
+
+}
+.follow{
+    text-align: center; 
+    font-size: 25px;
+    float: center;
+}
+footer{
+    grid-area: ft;
+    background-color: whitesmoke;
+}

@@ -1,0 +1,191 @@
+
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: whitesmoke;
+  }
+  h2{
+      text-align: center;
+      font-family:'Times New Roman', Times, serif; 
+      font-style: normal;
+      font-size: 40px;
+  }
+  .border p{
+      text-align: center;
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 20px;
+      float:center;
+      border: 1px lightsteelblue;
+      display: block;
+      padding: 10px;
+      background-color: rgb(159, 231, 253);
+      
+
+  }
+  
+   .right{
+      margin-right: 40px;
+      text-decoration: none;
+  }
+  .left{
+    margin-right: 40px;
+    text-decoration: none;
+}
+.center{
+    margin-left: 20px;
+    text-decoration: none;
+}
+.last{
+    float:right;
+    margin-right:25px ;
+    cursor: pointer;
+    padding:5px;
+   font-size: 16px;
+   border-radius: 12px;
+   border: 5px blue;
+   background-color: mediumaquamarine;
+   
+   
+}
+  
+  figcaption p{
+      font-family: Arial, Helvetica, sans-serif;
+      font-size: 17px;
+  }
+  
+  .container{
+    display:grid;
+    width:100%;
+    grid-template-columns: 150px 140px;
+    grid-template-rows: 170px 800px 100px;
+    border: 2px gray;
+    grid-gap: 15px;
+    grid-template-areas: 
+                    "hd hd hd hd hd hd  hd" 
+                    "sd sd sd sd sd  main main "
+                    "ft ft ft ft ft ft  ft"; 
+ }
+  
+  
+  .header{
+    grid-area:hd;
+  }
+  .footer{
+    grid-area: ft;  
+  }
+  .sidebar{
+    grid-area: sd;
+    
+    
+  }
+  figure{
+      display: block;
+  }
+  figure img{
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+    
+  }
+  .flex{
+display: flex;
+flex-direction: row;
+  }
+  .flex img{
+      margin-top: 50px;
+      width:290px;
+      height:240px;
+      border-radius: 20px;
+      margin-right: 20px;
+      margin-left:50px ;
+  }
+  .maincontent{
+    grid-area: main;
+    
+  }
+  .box{
+    border: 1px solid whitesmoke;
+    background-color: white;
+  }
+  #nestedgrid{
+    grid-template-rows: 40% 40%;
+    display: grid;
+    border: 1px gainsboro;
+    justify-content: space-around;
+  }
+  .photo{
+    border: 1px rgb(202, 197, 206);
+    background-color:#FAEBD7;
+    width:250px;
+    height:200px;
+    
+  }
+  .photo1{
+    border: 1px red;
+    background-color:blue;
+    width:119px;
+    height:97px;
+     
+  }
+  .text{
+text-align: center;
+font-size: 15px;
+background-color: #FAEBD7;
+padding:10px;
+  }
+  #one{
+    background-image: url('https://jugaadugirls.com/wp-content/uploads/2019/07/53-Amazing-and-Unique-Hairstyles-for-Summer-for%E2%80%A6-1-564x675.jpg' );
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  .catagory li{
+      color: rebeccapurple;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      margin-right: 30px;
+      padding: 2px;
+      text-align: center;
+      font-size: 14px;
+      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
+      
+}
+.catagory button{
+    border-radius: 12px;
+    margin-right: 10px;
+    margin-bottom: 8px;
+    
+}
+.next{
+    text-align: center;
+    font-size: 14px;
+    color: slategray;
+    margin-top: 30px;
+}
+  #grid2{
+      display:grid;
+     
+      grid-template-rows:50% 50%  ;
+      grid-template-columns:50% 50% ;
+      
+      grid-gap:2px;
+      border: 2px hotpink;
+ }
+ #box1{
+     background-image:url('https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/449d60b9-9637-2d6e-55bb-d2402d832430/630x355.jpg');
+     background-repeat: no-repeat;
+     background-size: cover;
+     border-radius: 18px;
+ }
+ .card{
+    text-align: center;
+    padding: 10px 20px;
+    background-color: lightskyblue;
+ }
+  
+  
+  
+  
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  
+     
+  
