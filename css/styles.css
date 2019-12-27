@@ -1,4 +1,5 @@
 
+@import 'style1.css';
   body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: whitesmoke;
@@ -20,6 +21,12 @@
       background-color: rgb(159, 231, 253);
       
 
+  }
+  #icon{
+    float:left;
+    margin-right:10px;
+    font-size:28px;
+    color:red;
   }
   
    .right{
@@ -51,7 +58,24 @@
       font-family: Arial, Helvetica, sans-serif;
       font-size: 17px;
   }
+  /* mobile screens */
   
+    .container{
+      display:grid;
+      height:90vh;
+      grid-template-columns: 850px;
+      grid-template-rows:  1fr 250px 1fr;
+      border: 2px gray;
+      grid-gap: 15px;
+      grid-template-areas: 
+                      "hd" 
+                      "sd " 
+                      "main  "
+                      "ft "; 
+   }
+  
+  /* medium screens */
+  @media (min-width: 600px) and (max-width: 1100px){
   .container{
     display:grid;
     width:100%;
@@ -64,6 +88,23 @@
                     "sd sd sd sd sd  main main "
                     "ft ft ft ft ft ft  ft"; 
  }
+}
+
+/* Larger screens */
+@media (min-width: 1101px){
+  .container{
+    display:grid;
+    width:100%;
+    grid-template-columns: 150px 140px;
+    grid-template-rows: 170px 800px 100px;
+    border: 2px gray;
+    grid-gap: 15px;
+    grid-template-areas: 
+                    "hd hd hd hd hd hd hd" 
+                    "sd sd sd sd sd sd main "
+                    "ft ft ft ft ft ft ft"; 
+ }
+}
   
   
   .header{
@@ -89,6 +130,7 @@
   .flex{
 display: flex;
 flex-direction: row;
+
   }
   .flex img{
       margin-top: 50px;
@@ -119,57 +161,7 @@ flex-direction: row;
     height:200px;
     
   }
-  .photo1{
-    border: 1px red;
-    background-color:blue;
-    width:119px;
-    height:97px;
-     
-  }
-  .text{
-text-align: center;
-font-size: 15px;
-background-color: #FAEBD7;
-padding:10px;
-  }
-  #one{
-    background-image: url('https://jugaadugirls.com/wp-content/uploads/2019/07/53-Amazing-and-Unique-Hairstyles-for-Summer-for%E2%80%A6-1-564x675.jpg' );
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-  .catagory li{
-      color: rebeccapurple;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      margin-right: 30px;
-      padding: 2px;
-      text-align: center;
-      font-size: 14px;
-      font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif ;
-      
-}
-.catagory button{
-    border-radius: 12px;
-    margin-right: 10px;
-    margin-bottom: 8px;
-    
-}
-.next{
-    text-align: center;
-    font-size: 14px;
-    color: slategray;
-    margin-top: 30px;
-}
-  #grid2{
-      display:grid;
-     
-      grid-template-rows:50% 50%  ;
-      grid-template-columns:50% 50% ;
-      
-      grid-gap:2px;
-      border: 2px hotpink;
- }
+  
  #box1{
      background-image:url('https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/449d60b9-9637-2d6e-55bb-d2402d832430/630x355.jpg');
      background-repeat: no-repeat;
@@ -182,10 +174,12 @@ padding:10px;
     background-color: lightskyblue;
  }
   
+ @media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  [class*="col-"] {
+    width: 100%;
+  }
+} 
   
-  
-  
-  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
   
      
-  
