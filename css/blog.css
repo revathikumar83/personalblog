@@ -10,9 +10,9 @@ header{
     background-color: whitesmoke;
 
 }
-.body{
+body{
     display:grid;
-    height:50vh;
+    height:100vh;
     border: 2px gray;
     grid-gap: 10px;
     grid-template-areas: 
