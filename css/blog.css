@@ -10,13 +10,24 @@ header{
     background-color: whitesmoke;
 
 }
-
+.body{
+    display:grid;
+    height:50vh;
+    border: 2px gray;
+    grid-gap: 10px;
+    grid-template-areas: 
+                    "hd" 
+                    "sd"
+                    "sp"
+                    "main "
+                    "ft "; 
+ }
 /* medium screens*/ 
 @media (min-width: 600px) and (max-width: 1100px){
 body{
     display:grid;
     grid-template-areas: "hd hd  hd hd hd hd hd" "sd main main main main main sp " "ft ft ft ft ft ft ft";
-    grid-template-rows: 60px 800px 80px;
+    grid-template-rows: 60px 800px 50px;
     grid-template-columns: 50px 300px 50px;
     border: 2px gray;
     grid-gap: 15px;
