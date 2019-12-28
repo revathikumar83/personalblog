@@ -33,6 +33,12 @@ form{
     margin:90px;
     text-align: center;
 }
+.subscription1{
+    float:center;
+    margin:90px;
+   font-size: 23px;
+   
+}
 input[type=text] {
     width: 30%;
     padding: 12px 20px;

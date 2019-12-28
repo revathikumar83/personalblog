@@ -61,6 +61,7 @@
   /* mobile screens */
   
     .container{
+      
       display:grid;
       height:100vh;
       border: 2px gray;
@@ -76,6 +77,7 @@
   @media (min-width: 600px) and (max-width: 1100px){
   .container{
     display:grid;
+    
     width:100%;
     grid-template-columns: 150px 240px;
     grid-template-rows: 170px 800px 150px;
@@ -85,6 +87,7 @@
                     "hd hd hd hd hd hd  hd" 
                     "sd sd sd sd sd  main main "
                     "ft ft ft ft ft ft  ft"; 
+
  }
 }
 
@@ -92,6 +95,7 @@
 @media (min-width: 1101px){
   .container{
     display:grid;
+    
     width:100%;
     grid-template-columns: 150px 240px;
     grid-template-rows: 170px 800px 150px;
@@ -145,6 +149,7 @@ flex-direction: row;
   .box{
     border: 1px solid whitesmoke;
     background-color: white;
+    overflow: scroll;
     
 
   }
@@ -173,9 +178,7 @@ flex-direction: row;
     text-align: center;
     padding: 10px 10px;
     background-color: lightskyblue;
-    
-    
- }
+    }
   
  
 
