@@ -62,7 +62,7 @@
   
     .container{
       display:grid;
-      height:50vh;
+      height:100vh;
       border: 2px gray;
       grid-gap: 10px;
       grid-template-areas: 
@@ -78,7 +78,7 @@
     display:grid;
     width:100%;
     grid-template-columns: 150px 240px;
-    grid-template-rows: 170px 1500px 150px;
+    grid-template-rows: 170px 800px 150px;
     border: 2px gray;
     grid-gap: 15px;
     grid-template-areas: 
@@ -93,8 +93,8 @@
   .container{
     display:grid;
     width:100%;
-    grid-template-columns: 150px 140px;
-    grid-template-rows: 170px 800px 100px;
+    grid-template-columns: 150px 240px;
+    grid-template-rows: 170px 800px 150px;
     border: 2px gray;
     grid-gap: 15px;
     grid-template-areas: 
@@ -138,11 +138,10 @@ flex-direction: row;
       margin-right: 20px;
       margin-left:50px ;
   }
+  
   .maincontent{
     grid-area: main;
-    
-    
-  }
+    }
   .box{
     border: 1px solid whitesmoke;
     background-color: white;
@@ -163,6 +162,7 @@ flex-direction: row;
     
   }
   
+  
  #box1{
      background-image:url('https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/449d60b9-9637-2d6e-55bb-d2402d832430/630x355.jpg');
      background-repeat: no-repeat;
@@ -177,12 +177,8 @@ flex-direction: row;
     
  }
   
- @media only screen and (max-width: 768px) {
-  /* For mobile phones: */
-  [class*="col-"] {
-    width: 100%;
-  }
-} 
+ 
+
   
   
      
