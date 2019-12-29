@@ -18,6 +18,8 @@ border:1px red;
 }
 section img{
     border-radius:50%;
+    width:200px; 
+    height:250px;
 }
 .bio{
 float:right;
