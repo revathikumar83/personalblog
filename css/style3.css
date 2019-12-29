@@ -1,0 +1,26 @@
+#nestedgrid {
+    grid-template-rows: 40% 40%;
+    display: grid;
+    border: 1px gainsboro;
+    justify-content: space-around;
+}
+
+.photo {
+    border: 1px rgb(202, 197, 206);
+    background-color: #FAEBD7;
+    width: 250px;
+    height: 200px;
+}
+
+#box1 {
+    background-image: url('https://cdn.travelpulse.com/images/99999999-9999-9999-9999-999999999999/449d60b9-9637-2d6e-55bb-d2402d832430/630x355.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 18px;
+}
+
+.card {
+    text-align: center;
+    padding: 10px 10px;
+    background-color: lightskyblue;
+}

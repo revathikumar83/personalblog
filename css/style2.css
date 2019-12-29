@@ -1,0 +1,33 @@
+figure {
+    display: block;
+}
+
+figure img {
+    background-size: cover;
+    width: 100%;
+    height: 350px;
+}
+
+.flex {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex img {
+    margin-top: 50px;
+    width: 290px;
+    height: 240px;
+    border-radius: 20px;
+    margin-right: 20px;
+    margin-left: 50px;
+}
+
+.maincontent {
+    grid-area: main;
+}
+
+.box {
+    border: 1px solid whitesmoke;
+    background-color: white;
+    overflow: scroll;
+}

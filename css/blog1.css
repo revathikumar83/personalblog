@@ -1,49 +1,51 @@
-#side{
-    
+#side {
     grid-area: sd;
 }
-#next{
-    
+
+#next {
     grid-area: sp;
 }
-#box{
-    
+
+#box {
     overflow: scroll;
     grid-area: main;
 }
-section{
-border:1px red;
 
-
-}
-section img{
-    border-radius:50%;
-    width:200px; 
-    height:250px;
-}
-.bio{
-float:right;
-font-size: 25px;
-color:rgba(0, 0, 0, 0.603);
+section {
+    border: 1px red;
 }
 
-form{
+section img {
+    border-radius: 50%;
+    width: 200px;
+    height: 250px;
+}
+
+.bio {
+    float: right;
+    font-size: 25px;
+    color: rgba(0, 0, 0, 0.603);
+}
+
+form {
     font-size: 25px;
 }
-.subscription{
-    float:center;
-    margin:90px;
+
+.subscription {
+    float: center;
+    margin: 90px;
     text-align: center;
 }
-.subscription1{
-    float:center;
-    margin:90px;
-   font-size: 23px;
-   
+
+.subscription1 {
+    float: center;
+    margin: 90px;
+    font-size: 23px;
 }
+
 input[type=text] {
     width: 30%;
     padding: 12px 20px;
     margin: 8px 0;
     box-sizing: border-box;
-  }
+}

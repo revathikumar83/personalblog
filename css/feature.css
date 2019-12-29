@@ -1,5 +1,4 @@
-
-header{
+header {
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 30px;
@@ -8,103 +7,114 @@ header{
     color: rgb(89, 15, 228);
     grid-area: hd;
     background-color: rgb(243, 237, 237);
-
 }
-/* mobile screens*/ 
-body{
-    display:grid;
+
+
+/* mobile screens*/
+
+body {
+    display: grid;
     height: 100vh;
-    grid-template-areas: "hd " "sd" "main" "sp" "ft" ;
+    grid-template-areas: "hd " "sd" "main" "sp" "ft";
     border: 2px gray;
     grid-gap: 25px;
     background-color: white;
-
 }
 
-/* medium screens*/ 
-@media (min-width: 600px) and (max-width: 1100px){
-body{
-    display:grid;
-    grid-template-areas: "hd hd  hd hd hd hd hd hd " "sd main main main main main sp sp" " ft ft ft ft ft ft ft ft";
-    grid-template-rows: 60px 800px 80px;
-    grid-template-columns: 50px 300px 50px;
-    border: 2px gray;
-    grid-gap: 15px;
-    background-color: white;
+
+/* medium screens*/
+
+@media (min-width: 600px) and (max-width: 1100px) {
+    body {
+        display: grid;
+        grid-template-areas: "hd hd  hd hd hd hd hd hd " "sd main main main main main sp sp" " ft ft ft ft ft ft ft ft";
+        grid-template-rows: 60px 800px 80px;
+        grid-template-columns: 50px 300px 50px;
+        border: 2px gray;
+        grid-gap: 15px;
+        background-color: white;
+    }
 }
-}
+
+
 /* larger screens */
-@media (max-width: 1101px){
-body{
-    display:grid;
-    grid-template-areas: "hd hd  hd hd hd hd hd hd" "sd main main main main main sp sp" "ft ft ft ft ft ft ft ft";
-    grid-template-rows: 60px 800px 80px;
-    grid-template-columns: 50px 300px 50px;
-    border: 2px gray;
-    grid-gap: 15px;
-    background-color: white;
-}
+
+@media (max-width: 1101px) {
+    body {
+        display: grid;
+        grid-template-areas: "hd hd  hd hd hd hd hd hd" "sd main main main main main sp sp" "ft ft ft ft ft ft ft ft";
+        grid-template-rows: 60px 800px 80px;
+        grid-template-columns: 50px 300px 50px;
+        border: 2px gray;
+        grid-gap: 15px;
+        background-color: white;
+    }
 }
 
-#side{
-    
+#side {
     grid-area: sd;
 }
-#next{
-    
+
+#next {
     grid-area: sp;
 }
-#box{
-    
-    overflow:scroll;
+
+#box {
+    overflow: scroll;
     grid-area: main;
 }
-section{
-border:1px red;
 
-
-}
-section img{
-    border-radius:10%;
-    width:45%;
-    height:250px;
-}
-.bio{
-float:right;
-font-size: 20px;
-color:rgba(15, 13, 12, 0.692);
+.travel {
+    border: 1px red;
 }
 
+.travel1 {
+    margin-bottom: 5px;
+}
 
-.subscription{
-    float:center;
-    margin:90px;
+.travel img {
+    border-radius: 10%;
+    width: 45%;
+    height: 250px;
+}
+
+.bio {
+    float: right;
+    font-size: 20px;
+    color: rgba(15, 13, 12, 0.692);
+}
+
+.subscription {
+    float: center;
+    margin: 90px;
     text-align: center;
 }
 
-
-#icon{
-    float:center;
-    margin-right:10px;
-    font-size:28px;
-    color:blue;
+#icon {
+    float: center;
+    margin-right: 10px;
+    font-size: 28px;
+    color: blue;
 }
-.follow{
-    text-align: center; 
+
+.follow {
+    text-align: center;
     font-size: 20px;
     float: center;
 }
-footer button{
-    padding:5px; 
+
+footer button {
+    padding: 5px;
     font-size: 15px;
-    border-radius:20px;
-    float:right;
-    margin-right:80px;
+    border-radius: 20px;
+    float: right;
+    margin-right: 80px;
     font-size: 18px;
     color: rgb(42, 16, 212);
     background-color: tomato;
 }
-footer{
+
+footer {
     grid-area: ft;
     background-color: whitesmoke;
 }
